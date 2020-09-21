@@ -143,9 +143,17 @@ client.on("message",async message=>{
             message.reply("yes you are :D")
             break;
         case "add":
+            var remove = new Discord.RichEmbed()
+                .setTitle("")
+                .setDescription("")
+                .setFooter("")
             message.reply("Coming Soon")
             break;
         case "remove":
+            var remove = new Discord.RichEmbed()
+                .setTitle("")
+                .setDescription("")
+                .setFooter("")
             message.reply("Coming Soon")
             break;
         case "info":

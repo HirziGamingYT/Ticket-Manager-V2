@@ -149,7 +149,8 @@ client.on("message",async message=>{
                 .addField("User Added:","user")
                 .addField("Executor","<@"+message.author.id+">")
                 .setFooter("Ticket Manager | Bugs may accur!")
-            message.reply("add")
+                .setColor("#ffff00");
+            message.reply("add");
             break;
         case "remove":
             var remove = new Discord.RichEmbed()
@@ -158,7 +159,8 @@ client.on("message",async message=>{
                 .addField("User Removed:","user")
                 .addField("Executor","<@"+message.author.id+">")
                 .setFooter("Ticket Manager | Bugs may accur!")
-            message.reply("remove")
+                .setColor("#ffff00");
+            message.reply("remove");
             break;
         case "info":
             var info = new Discord.RichEmbed()

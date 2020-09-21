@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kistaf",
+  "author": "GARUDA_2703#6266,HirziGamingYT#8701",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1"

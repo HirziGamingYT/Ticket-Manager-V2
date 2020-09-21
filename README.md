@@ -19,6 +19,9 @@ Make sure the config contains your bot token and run the bot by typing **node in
 
 [Garuda](https://github.com/GARUDA2703)
 
+## Error
+If you see some error just contact me or hirzi(HirziGamingYT#8701 And GARUDA_2703#6266)
+
 **Note This is Using discordjs v11 not v12 and using nodejs v12**
 
 (And if you cant use **npm install** then just use **npm i discord.js**)

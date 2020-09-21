@@ -145,6 +145,10 @@ client.on("message",async message=>{
             message.reply("yes you are :D")
             break;
         case "add":
+            var err = new Discord.RichEmbed() 
+                .setTitle("Ticket Support | Error! ") 
+                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setFooter("Ticket Manager | Bugs may Occur! ")
             var add = new Discord.RichEmbed()
                 .setTitle("Ticket Update")
                 .setDescription("User successfully added to the ticket!")
@@ -152,9 +156,18 @@ client.on("message",async message=>{
                 .addField("Executor","<@"+message.author.id+">")
                 .setFooter("Ticket Manager | Bugs may accur!")
                 .setColor("#ffff00");
+            if(!message.channel.name.endsWith("ticket")){
+                message.reply(err);
+                break;
+            }
             message.reply(add);
+            message.reply("The command still in WIP");
             break;
         case "remove":
+            var err = new Discord.RichEmbed() 
+                .setTitle("Ticket Support | Error! ") 
+                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setFooter("Ticket Manager | Bugs may Occur! ")
             var remove = new Discord.RichEmbed()
                 .setTitle("Ticket Update")
                 .setDescription("User successfully removed from the ticket!")
@@ -162,15 +175,25 @@ client.on("message",async message=>{
                 .addField("Executor","<@"+message.author.id+">")
                 .setFooter("Ticket Manager | Bugs may accur!")
                 .setColor("#ffff00");
+            if(!message.channel.name.endsWith("ticket")){
+                message.reply(err);
+                break;
+            }
             message.reply(remove);
+            message.reply("The command still in WIP");
             break;
         case "info":
+            var err = new Discord.RichEmbed() 
+                .setTitle("Ticket Support | Error! ") 
+                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setFooter("Ticket Manager | Bugs may Occur! ")
             var info = new Discord.RichEmbed()
                 .setTitle("Ticket Manager Info")
                 .setDescription("Ticket Manager is a Ticket bot made by HirziGamingYT#8701 and GARUDA_2703#6266 and made for the Discord Server. It helps run the server and has fun commands! Ticket Manager is also make a private channel for helping user who need help. Ticket Manager is always being updated with tons of new commands each day!")
                 .setFooter("Ticket Manager, made with ❤️ by Hirzi and Garuda")
                 message.reply(info)
             break;
+
         default:
             break;
     }

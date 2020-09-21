@@ -15,9 +15,9 @@ Make sure the config contains your bot token and run the bot by typing **node in
 [Kistaf](https://github.com/Kistaf)
 
 ## REMAKE By
-[Hirzi](https://github.com/HirziGamingYT)
+[Hirzi](https://github.com/HirziGamingYT) HirziGamingYT#8701
 
-[Garuda](https://github.com/GARUDA2703)
+[Garuda](https://github.com/GARUDA2703) GARUDA_2703#6266
 
 ## Error
 If you see some error just contact me or hirzi(HirziGamingYT#8701 And GARUDA_2703#6266)

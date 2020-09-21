@@ -104,9 +104,8 @@ client.on("message",async message=>{
             );
             collector.on('collect', m => {
                 if(!m.channel.deletable)message.reply(errd);
+                if(!m.channel.delete)message.author.send(dmm);
                 else m.channel.delete();
-                if(!m.channel.delete)
-                message.author.send(dmm);
               });
             break;
         case "ping":
@@ -151,7 +150,7 @@ client.on("message",async message=>{
         case "add":
             var err = new Discord.RichEmbed() 
                 .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setDescription( "The Command is only built for a ticket channel.") 
                 .setFooter("Ticket Manager | Bugs may Occur! ")
                 .setColor("#ff0000")
             var add = new Discord.RichEmbed()
@@ -171,7 +170,7 @@ client.on("message",async message=>{
         case "remove":
             var err = new Discord.RichEmbed() 
                 .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setDescription( "The Command is only built for a ticket channel.") 
                 .setFooter("Ticket Manager | Bugs may Occur! ")
                 .setColor("#ff0000")
             var remove = new Discord.RichEmbed()
@@ -191,7 +190,7 @@ client.on("message",async message=>{
         case "info":
             var err = new Discord.RichEmbed() 
                 .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel!.") 
+                .setDescription( "The Command is only built for a ticket channel.") 
                 .setFooter("Ticket Manager | Bugs may Occur! ")
             var info = new Discord.RichEmbed()
                 .setTitle("Ticket Manager Info")

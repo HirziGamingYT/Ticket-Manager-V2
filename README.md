@@ -28,7 +28,7 @@ t!old
 
 t!im old but new
 
-t!info (bot information
+t!info (bot information)
 
 ## Built with
 [Discord.js](https://discord.js.org/) - Discord Javascript libary

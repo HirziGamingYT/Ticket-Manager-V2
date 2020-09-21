@@ -16,4 +16,5 @@ Make sure the config contains your bot token and run the bot by typing **node in
 
 ## REMAKE By
 [Hirzi](https://github.com/HirziGamingYT)
+
 [Garuda](https://github.com/GARUDA2703)

@@ -101,7 +101,8 @@ client.on("message",async message=>{
             collector.on('collect', m => {
                 if(!m.channel.deletable)message.reply(errd);
                 else m.channel.delete();
-                if(!m.channel.delete)message.author.send(dmm);
+                if(!m.channel.delete)
+                message.author.send(dmm);
               });
             break;
         case "ping":

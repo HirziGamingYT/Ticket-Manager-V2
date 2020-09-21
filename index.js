@@ -11,7 +11,7 @@ client.on("ready",()=>{
 
 client.on("message",async message=>{
     if(message.author.bot||message.type=="dm")return;
-    var arg = message.content.toLowerCase().split("!");
+    var arg = message.content.toLowerCase().split("!");` //Change this if you dont wanna use the ! thing 
     if(arg[0]!='t')return; //Change your prefix 
     if(!message.guild.me.hasPermission("MANAGE_CHANNELS")||!message.guild.me.hasPermission("MANAGE_ROLES")){
         var errp = new Discord.RichEmbed()
@@ -134,10 +134,7 @@ client.on("message",async message=>{
             message.reply(help);
             break;
         case "forceclose":
-            if (!messages.channel.name.endsWith("ticket")){messages.reply(err);
-                break;
-            }
-            !m.channel.delete();
+             message.channel.send(" still in WIP")
             break;
         case "old":
             message.channel.send("Im old but new :D");

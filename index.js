@@ -105,8 +105,9 @@ client.on("message",async message=>{
               });
             break;
         case "ping":
-            message.channel.send("<:pong:757446940274458695>Pong!**Ping:**")
+            message.channel.send("<:pong:757446940274458695>Pong!\n**Ping:**")
             message.channel.send(`**${client.ping}Ms**`)
+            message.channel.send("**Node:**\n EU
             break;
         case "uptime": 
             let totalSeconds = (client.uptime / 1000);

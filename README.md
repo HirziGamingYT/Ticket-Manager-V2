@@ -7,9 +7,13 @@ Open a terminal of your choice and type **npm install**
 Make sure the config contains your bot token and run the bot by typing **node index.js**
 
 ## Built with
-*[Discord.js](https://discord.js.org/) - Discord Javascript libary
+[Discord.js](https://discord.js.org/) - Discord Javascript libary
 
-*[Node.js](https://nodejs.org/en//) - Serverside Javascript Libary
+[Node.js](https://nodejs.org/en//) - Serverside Javascript Libary
 
 ## Author
-*[Kistaf](https://github.com/Kistaf)
+[Kistaf](https://github.com/Kistaf)
+
+## REMAKE By
+[Hirzi](https://github.com/HirziGamingYT)
+[Garuda](https://github.com/GARUDA2703)

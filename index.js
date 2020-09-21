@@ -12,7 +12,7 @@ client.on("ready",()=>{
 client.on("message",async message=>{
     if(message.author.bot||message.type=="dm")return;
     var arg = message.content.toLowerCase().split("!");
-    if(arg[0]!='t')return;
+    if(arg[0]!='t')return; //Change your prefix 
     if(!message.guild.me.hasPermission("MANAGE_CHANNELS")||!message.guild.me.hasPermission("MANAGE_ROLES")){
         var errp = new Discord.RichEmbed()
                 .setTitle("Ticket Support | Error!")
@@ -60,7 +60,7 @@ client.on("message",async message=>{
                         allow:["READ_MESSAGES"]
                     }
               );
-            message.guild.createChannel(message.author.username+"s ticket",{
+            message.guild.createChannel(message.author.username+" ticket",{
                 type: "text",
                 parent: TicketCategory.id,
                 permissionOverwrites: perms

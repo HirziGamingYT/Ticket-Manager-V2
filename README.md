@@ -7,6 +7,29 @@ Open a terminal of your choice and type **npm install**
 Make sure the config contains your bot token and run the bot by typing **node index.js**
 And Config The Emoji Yourself 
 
+## Commands
+**Ticket Command**
+
+t!new (create a ticket)
+
+t!close (close a ticket)
+
+t!add (add a user on ticket)
+
+t!remove (remove a user on ticket)
+
+t!uptime (bot uptime)
+
+t!ping (bot ping)
+
+**Other Command**
+
+t!old
+
+t!im old but new
+
+t!info (bot information
+
 ## Built with
 [Discord.js](https://discord.js.org/) - Discord Javascript libary
 

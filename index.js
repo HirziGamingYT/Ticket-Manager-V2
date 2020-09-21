@@ -11,7 +11,7 @@ client.on("ready",()=>{
 
 client.on("message",async message=>{
     if(message.author.bot||message.type=="dm")return;
-    var arg = message.content.toLowerCase().split("!");` //Change this if you dont wanna use the "!" thing 
+    var arg = message.content.toLowerCase().split("!"); //Change this if you dont wanna use the "!" thing 
     if(arg[0]!='t')return; //If you wanna Change your prefix just simply Change "t" to your prefix 
     if(!message.guild.me.hasPermission("MANAGE_CHANNELS")||!message.guild.me.hasPermission("MANAGE_ROLES")){
         var errp = new Discord.RichEmbed()

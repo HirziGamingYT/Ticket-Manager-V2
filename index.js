@@ -19,7 +19,7 @@ client.on("message",async message=>{
                 .setDescription("Error! I need `MANAGE_CHANNEL` and `MANAGE_ROLES` permission!")
                 .setFooter("Ticket Manager | Bugs may occur!")
                 .setColor("#ff0000")
-        message.reply(errp)
+        message.channel.send(errp)
         return;
     }
     let TicketCategory = message.guild.channels.find(channel=>channel.name==="Tickets");
@@ -70,7 +70,7 @@ client.on("message",async message=>{
                 .setTitle("Ticket Opened")
                 .setDescription("<a:yes:747788284066922562><@"+message.author.id+"> Success create your ticket")
                 .setFooter("Ticket Manager | Bugs may occur!")
-            message.reply(Success);
+            message.channel.send(Success);
             break;
         case "close":
             var err = new Discord.RichEmbed()
@@ -93,17 +93,17 @@ client.on("message",async message=>{
                 .setDescription("**Closed By:** <@"+message.author.id+">\n**Reason: Automated response:** This message is sent to inform that your support ticket has reached the end of it's conversation. We hope you're satisifed!")
                 .setFooter("Ticket Manager | Bugs may occur!")
             if(!message.channel.name.endsWith("ticket")){
-                message.reply(err);
+                message.channel.send(err);
                 break;
             }
-            message.reply(con);
+            message.channel.send(con);
             
             const collector = message.channel.createMessageCollector(
                 m=>m.content.toLowerCase().startsWith("yes")&&m.author.id==message.author.id,
                 {time:20000,max:1}
             );
             collector.on('collect', m => {
-                if(!m.channel.deletable)message.reply(errd);
+                if(!m.channel.deletable)message.channel.send(errd);
                 if(!m.channel.delete)message.author.send(dmm);
                 else m.channel.delete();
               });
@@ -111,7 +111,7 @@ client.on("message",async message=>{
         case "ping":
             message.channel.send("<:pong:757446940274458695>Pong!\n**Ping:**")
             message.channel.send(`**${client.ping}Ms**`)
-            message.channel.send("**Node:**\n YOUR NODE")
+            message.channel.send("**Node:**\n `YOUR NODE`")
             break;
         case "uptime": 
             let totalSeconds = (client.uptime / 1000);
@@ -136,16 +136,16 @@ client.on("message",async message=>{
                 .addField("Invite","Link:\nhttps://discord.com/oauth2/authorize?client_id=745979860392083486&scope=bot&permissions=8")
                 .setFooter("Ticket Manager")
                 .setColor('#32cd32');
-            message.reply(help);
+            message.channel.send(help);
             break;
         case "forceclose":
-             message.channel.send(" still in WIP")
+             message.channel.send("The command still in WIP")
             break;
         case "old":
             message.channel.send("Im old but new :D");
             break;
         case "im old but new":
-            message.reply("yes you are :D")
+            message.channel.send("yes you are :D")
             break;
         case "add":
             var err = new Discord.RichEmbed() 
@@ -161,11 +161,11 @@ client.on("message",async message=>{
                 .setFooter("Ticket Manager | Bugs may accur!")
                 .setColor("#ffff00");
             if(!message.channel.name.endsWith("ticket")){
-                message.reply(err);
+                message.channel.send(err);
                 break;
             }
-            message.reply(add);
-            message.reply("The command still in WIP");
+            message.channel.send(add);
+            message.channel.send("The command still in WIP");
             break;
         case "remove":
             var err = new Discord.RichEmbed() 
@@ -181,11 +181,11 @@ client.on("message",async message=>{
                 .setFooter("Ticket Manager | Bugs may accur!")
                 .setColor("#ffff00");
             if(!message.channel.name.endsWith("ticket")){
-                message.reply(err);
+                message.channel.send(err);
                 break;
             }
-            message.reply(remove);
-            message.reply("The command still in WIP");
+            message.channel.send(remove);
+            message.channel.send("The command still in WIP");
             break;
         case "info":
             var err = new Discord.RichEmbed() 
@@ -196,7 +196,7 @@ client.on("message",async message=>{
                 .setTitle("Ticket Manager Info")
                 .setDescription("Ticket Manager is a Ticket bot made by HirziGamingYT#8701 and GARUDA_2703#6266 and made for the Discord Server. It helps run the server and has fun commands! Ticket Manager is also make a private channel for helping user who need help. Ticket Manager is always being updated with tons of new commands each day!")
                 .setFooter("Ticket Manager, made with ❤️ by Hirzi and Garuda")
-                message.reply(info)
+                message.channel.send(info)
             break;
 
         default:

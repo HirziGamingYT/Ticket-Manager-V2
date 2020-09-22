@@ -65,7 +65,7 @@ client.on("message",async message=>{
                 type: "text",
                 parent: TicketCategory.id,
                 permissionOverwrites: perms
-            }).then(channel=>reply(ticket))
+            }).then(channel=>channel.send(ticket))
             var Success = new Discord.RichEmbed()
                 .setTitle("Ticket Opened")
                 .setDescription("<a:yes:747788284066922562><@"+message.author.id+"> Success create your ticket")

@@ -14,10 +14,6 @@ t!new (create a ticket)
 
 t!close (close a ticket)
 
-t!add (add a user on ticket)
-
-t!remove (remove a user on ticket)
-
 t!uptime (bot uptime)
 
 t!ping (bot ping)

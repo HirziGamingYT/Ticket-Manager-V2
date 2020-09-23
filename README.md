@@ -49,3 +49,6 @@ If you see some error just contact me or hirzi(HirziGamingYT#8701 And GARUDA_270
 **Note This is Using discordjs v11 not v12 and using nodejs v12**
 
 (And if you cant use **npm install** then just use **npm i discord.js**)
+
+## Premium
+[Premium Info](https://github.com/HirziGamingYT/Ticket-Manager/blob/master/PREMIUM.md)

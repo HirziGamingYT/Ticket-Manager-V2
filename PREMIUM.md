@@ -1,5 +1,5 @@
 # Premium Ticket Bot
-But Premium ticket bot with:
+Buy Premium ticket bot with:
 
 ## Feature
 - Discord.js v12

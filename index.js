@@ -136,9 +136,6 @@ client.on("message",async message=>{
                 .setColor('#32cd32');
             message.channel.send(help);
             break;
-        case "forceclose":
-             message.channel.send("The command still in WIP")
-            break;
         case "old":
             message.channel.send("Im old but new :D");
             break;

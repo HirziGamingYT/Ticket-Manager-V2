@@ -130,8 +130,6 @@ client.on("message",async message=>{
                 .addField("t!close","Issue is solved? then you can delete the channel with ticket delete")
                 .addField("t!ping","Check my ping")
                 .addField("t!uptime","Check my uptime")
-                .addField("t!add","Add other user to ticket")
-                .addField("t!remove","Remove user from ticket")
                 .addField("t!info","View my Information")
                 .addField("Invite","Link:\nhttps://discord.com/oauth2/authorize?client_id=745979860392083486&scope=bot&permissions=8")
                 .setFooter("Ticket Manager")
@@ -146,46 +144,6 @@ client.on("message",async message=>{
             break;
         case "im old but new":
             message.channel.send("yes you are :D")
-            break;
-        case "add":
-            var err = new Discord.RichEmbed() 
-                .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel.") 
-                .setFooter("Ticket Manager | Bugs may Occur! ")
-                .setColor("#ff0000")
-            var add = new Discord.RichEmbed()
-                .setTitle("Ticket Update")
-                .setDescription("User successfully added to the ticket!")
-                .addField("User Added:","user")
-                .addField("Executor","<@"+message.author.id+">")
-                .setFooter("Ticket Manager | Bugs may accur!")
-                .setColor("#ffff00");
-            if(!message.channel.name.endsWith("ticket")){
-                message.channel.send(err);
-                break;
-            }
-            message.channel.send(add);
-            message.channel.send("The command still in WIP");
-            break;
-        case "remove":
-            var err = new Discord.RichEmbed() 
-                .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel.") 
-                .setFooter("Ticket Manager | Bugs may Occur! ")
-                .setColor("#ff0000")
-            var remove = new Discord.RichEmbed()
-                .setTitle("Ticket Update")
-                .setDescription("User successfully removed from the ticket!")
-                .addField("User Removed:","user")
-                .addField("Executor","<@"+message.author.id+">")
-                .setFooter("Ticket Manager | Bugs may accur!")
-                .setColor("#ffff00");
-            if(!message.channel.name.endsWith("ticket")){
-                message.channel.send(err);
-                break;
-            }
-            message.channel.send(remove);
-            message.channel.send("The command still in WIP");
             break;
         case "info":
             var err = new Discord.RichEmbed() 

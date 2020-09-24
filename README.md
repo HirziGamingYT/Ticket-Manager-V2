@@ -14,10 +14,6 @@ t!new (create a ticket)
 
 t!close (close a ticket)
 
-t!uptime (bot uptime)
-
-t!ping (bot ping)
-
 **Other Command**
 
 t!old
@@ -25,6 +21,10 @@ t!old
 t!im old but new
 
 t!info (bot information)
+
+t!ping (Check bot ping)
+
+t!uptime (Check bot uptime)
 
 ## Built with
 [Discord.js](https://discord.js.org/) - Discord Javascript libary

@@ -131,7 +131,6 @@ client.on("message",async message=>{
                 .addField("t!ping","Check my ping")
                 .addField("t!uptime","Check my uptime")
                 .addField("t!info","View my Information")
-                .addField("Invite","Link:\nhttps://discord.com/oauth2/authorize?client_id=745979860392083486&scope=bot&permissions=8")
                 .setFooter("Ticket Manager")
                 .setColor('#32cd32');
             message.channel.send(help);

@@ -142,10 +142,6 @@ client.on("message",async message=>{
             message.channel.send("yes you are :D")
             break;
         case "info":
-            var err = new Discord.RichEmbed() 
-                .setTitle("Ticket Support | Error! ") 
-                .setDescription( "The Command is only built for a ticket channel.") 
-                .setFooter("Ticket Manager | Bugs may Occur! ")
             var info = new Discord.RichEmbed()
                 .setTitle("Ticket Manager Info")
                 .setDescription("Ticket Manager is a Ticket bot made by HirziGamingYT#8701 and GARUDA_2703#6266 and made for the Discord Server. It helps run the server and has fun commands! Ticket Manager is also make a private channel for helping user who need help. Ticket Manager is always being updated with tons of new commands each day!")
